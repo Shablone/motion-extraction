@@ -1,0 +1,25 @@
+[project]
+name = "motion-extraction"
+version = "0.1.0"
+description = "Default template for PDM package"
+authors = [
+    {name = "Elias",email = "1elias.bauer@gmail.com"},
+]
+dependencies = [
+    "moviepy>=1.0.3",
+    "numpy>=1.26.2",
+    "opencv-python>=4.9.0.80",
+    "tqdm>=4.66.1",
+]
+requires-python = "==3.10.*"
+readme = "README.md"
+license = {text = "MIT"}
+
+
+[tool.pdm]
+package-type = "application"
+
+[tool.pdm.dev-dependencies]
+dev = [
+    "ipykernel>=6.29.0",
+]
